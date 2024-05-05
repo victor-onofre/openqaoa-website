@@ -141,6 +141,7 @@ nav:
       - qubit-routing/qaoa-qubit-routing.md
   - Error Mitigation:
       - error-mitigation/spam-twirling.md
+      - error-mitigation/mitiq-zne.md
   - OpenQAOA jobs:
       - openqaoa-jobs/braket-container.md
   - Contributing:
