@@ -5,7 +5,7 @@
 
 Zero-Noise Extrapolation is an error mitigation technique which infers the effects of noise on the expectation value of an observable. 
 
-Given a circuit $U$ and an observable $X$, this technique creates $n$ replicas of $U$, functionally equivalent to $U$, but each one having increased depth. Therefore, each of this circuit is affected by greater noise level. We keep track of noise levels $\{\lambda\}_{j=0}^n$ and the corresponding expectation values for $X$, i.e., $\{\hat{\mu}\}_{j=0}^n$. At this point, we can infer the expectation value corresponding to a zero-noise level, i.e., the correct expectation value when no noise is present.
+Given a circuit $U$ and an observable $X$, this technique creates $n$ replicas of $U$, functionally equivalent to $U$, but each one having increased depth. Therefore, each of this circuit is affected by greater noise level. We keep track of noise levels $\\{\\lambda\\}_{j=0}^{n}$ and the corresponding expectation values for $X$, i.e., $\\{\\hat{\\mu}\\}_{j=0}^{n}$. At this point, we can infer the expectation value corresponding to a zero-noise level, i.e., the correct expectation value when no noise is present.
 
 ![ZNE_workflow](/img/ZNE_workflow.png)
 This figure shows a general workflow for ZNE, and it is based on Ref. 1.
