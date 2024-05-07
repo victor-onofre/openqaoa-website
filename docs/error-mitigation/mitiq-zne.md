@@ -5,7 +5,8 @@
 
 Zero-Noise Extrapolation is an error mitigation technique which infers the effects of noise on the expectation value of an observable. 
 
-Given a circuit $U$ and an observable $X$, this technique creates $n$ replicas of $U$, functionally equivalent to $U$, but each one having increased depth. Therefore, each of this circuit is affected by greater noise level. We keep track of noise levels $\lambda_{j=0}^{n}$ and the corresponding expectation values for $X$, i.e., $\hat{\mu}_{j=0}^{n}$. At this point, we can infer the expectation value corresponding to a zero-noise level, i.e., the correct expectation value when no noise is present.
+Given a circuit $U$ and an observable $X$, this technique creates $n$ replicas of $U$, functionally equivalent to $U$, but each one having increased depth. These are called $\textbf{scaled circuits}$. The depth of each of the $0 \leq j <n$ scaled circuit is defined by its own $j$ noise level $\lambda_j$, therefore, each $j$ scaled circuit is affected by greater noise level. We keep track of noise levels $\{\lambda\}_{j=0}^{n}$ and the corresponding expectation values for $X$, i.e., $\{\hat{\mu}\}_{j=0}^{n}$. At this point, we can infer the expectation value corresponding to a zero-noise level, i.e., the correct expectation value when no noise is present.
+
 
 ![ZNE_workflow](/img/ZNE_workflow.png)
 This figure shows a general workflow for ZNE, and it is based on Ref. 1.
@@ -47,7 +48,7 @@ if self.error_mitigation_properties.error_mitigation_technique == "mitiq_zne":
 ```
 
 ### What to expect?
-Let's see the technique in practice by solving a MaxCut Problem for n=6 qubits. We compare the evolution of the cost function as the number of function evaluations increases, in three cases:
+Let's see the technique in practice by solving a MaxCut Problem for $n=6$ qubits. We compare the evolution of the cost function as the number of function evaluations increases, in three cases:
 
 - Noiseless environment, with the `qiskit.shot_simulator` (blue plot line).
 - Noisy environment without ZNE, using a noise model with one-qubit and two-qubit depolarizing errors, based on IBM Quebec quantum computer (error probabilities retrieved on Jan 19, 2024) (red plot line). 
