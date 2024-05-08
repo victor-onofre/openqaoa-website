@@ -48,7 +48,11 @@ if self.error_mitigation_properties.error_mitigation_technique == "mitiq_zne":
 ```
 
 ### What to expect?
-Let's see the technique in practice by solving a MaxCut Problem for $n=6$ qubits. We compare the evolution of the cost function as the number of function evaluations increases, in three cases:
+Let's see the technique in practice by solving a MaxCut Problem for $n=6$ qubits. In particular, the instance of the problem is the following graph:
+
+![MAXCUT_plot](/img/MAXCUT_plot.png)
+
+We compare the evolution of the cost function as the number of function evaluations increases, in three cases:
 
 - Noiseless environment, with the `qiskit.shot_simulator` (blue plot line).
 - Noisy environment without ZNE, using a noise model with one-qubit and two-qubit depolarizing errors, based on IBM Quebec quantum computer (error probabilities retrieved on Jan 19, 2024) (red plot line). 
