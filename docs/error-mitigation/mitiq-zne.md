@@ -60,6 +60,8 @@ We compare the evolution of the cost function as the number of function evaluati
 
 ![ZNE_plot](/img/ZNE_plot.png)
 
+Don't forget to check out also the following [tutorial](https://github.com/victor-onofre/QAOA_Error_Mitigation/blob/main/tutorial_openqaoa_zne.ipynb)!
+
 ## References
 1. [Zero-Noise Extrapolation - Mitiq Documentation](https://mitiq.readthedocs.io/en/stable/guide/zne.html)
 2. [Bultrini, D., et al.](https://doi.org/10.22331/q-2023-06-06-1034), Unifying and benchmarking state-of-the-art quantum error mitigation techniques, Quantum 7 (2023): 1034. 
